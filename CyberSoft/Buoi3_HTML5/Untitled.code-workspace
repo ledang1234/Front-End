@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/GiaLePhuongg/Documents/CyberSoft/Buoi2_CSS"
+		},
+		{
+			"path": "/Users/GiaLePhuongg/Documents/CyberSoft/Buoi1_HTML"
+		},
+		{
+			"path": "/Users/GiaLePhuongg/Documents/CyberSoft/DemoResponsive"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DemoResponsive"
+	}
+}

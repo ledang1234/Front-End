@@ -1,0 +1,193 @@
+/* GLOBAL */
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    /* 1 rem = 18px */
+    font-size: 18px;
+}
+
+/* HEADER */
+header{
+    background-color:#4e2a83 ;
+}
+.header__content{
+    /* the con nam tren 1 hang */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* tao khg cach theo chiue ngang */
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    /* canh giua theo chieu doc */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* canh giua noi dung lon */
+    width: 70%;
+    margin: 0 auto;
+
+}
+.header__content nav ul{
+    list-style: none;   
+}
+.header__content nav ul li{
+    display: inline;
+    margin: 0 5px;
+    padding: 1px;
+
+}
+.header__content nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.header__content p{
+    /* font-size: 37px; */
+    font-size: 2rem;
+    color: white;
+}
+
+.header__content .active a{
+    color: #ff1989;
+    
+}
+
+/* CAROUSEL */
+
+.carousel{
+    height: 600px;
+    background-image: url('../b3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* canh giua ap dungn cho 1 the con  duy nhat , con khong se len 1 hanng */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+}
+.carousel__content{
+    text-align: center;
+    color: white;
+}
+
+/* INTRO */
+.intro{
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /* fr 1/4*/
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.intro__ab1{
+    /* Cach 1: gom collum -> line bat dau / line ket thuc
+    grid-column: 2 / 4 ; */
+
+
+    /* Cach 2: line bat dau / span so cot gom */
+    grid-column: 2 / span 2;
+}
+
+.intro__bake{
+    grid-column: 1/ span 2;
+}
+
+.intro__ab4{
+    grid-column: 3 / span 2;
+}
+.intro__items img{
+    width: 100%;
+    display: block;
+}
+/* grid-> flexbox-> float */
+
+/* CONTACT */
+.contact{
+    padding: 50px 0;
+}
+.contact h1 {
+    text-align: center;
+    margin: 20px;
+}
+.contact__form{
+    width: 85%;
+    margin: 0 auto;   
+}
+.contact__form form{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 10px;
+    
+}
+.contact__form form input{
+    padding: 20px 10px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+    
+}
+.contact__form form input:focus , .contact__form form textarea:focus{
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.contact__form form textarea ,.contact__form form button{
+    grid-column: 1 / span 2;
+    padding: 15px 10px;
+    outline: none;
+}
+.contact__form form textarea::-webkit-input-placeholder{
+    color: palevioletred;
+}
+.contact__form form textarea:-ms-input-placeholder{
+    color: palevioletred;
+}
+.contact__form form textarea::-ms-input-placeholder{
+    color: palevioletred;
+}
+.contact__form form textarea::placeholder{
+    color: palevioletred;
+}
+.map__iframe{
+    width: 100%;
+}
+/* BACK TO TOP */
+.backtotop{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    font-size: 3rem;
+    color: blue;
+    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid blue;
+
+
+    opacity: 0; 
+    visibility: hidden; 
+    
+
+}
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+

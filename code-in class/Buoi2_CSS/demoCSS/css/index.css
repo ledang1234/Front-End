@@ -1,0 +1,23 @@
+/* tag name */
+/* selector */
+h2{
+    background-color: red;
+    color: violet;
+}
+#title2{
+    font-size: 20px;
+    color: tomato;
+}
+
+.heading2{
+    color: white;
+}
+/* 110 */
+.heading2#title2{
+    color: yellow;
+}
+
+
+h1{
+    color:blue ;
+}

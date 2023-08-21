@@ -1,0 +1,11 @@
+.InDam{
+    font-weight: bold;
+}
+
+tr.trThongTinNguoiDung{
+    cursor: pointer;
+}
+
+tr.trThongTinNguoiDung:hover{
+    background: rgba(0,0,0, 0.1);
+}

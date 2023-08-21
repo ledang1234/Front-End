@@ -1,0 +1,21 @@
+h2{
+    background-color: red;
+    color: green;
+}
+
+.heading2{
+    color: white;
+} 
+
+#title2{
+    font-size: 20px;
+    color: tomato; 
+}
+
+h1{
+    color: blue
+}
+
+.heading2#title2{
+    color: yellow;
+}

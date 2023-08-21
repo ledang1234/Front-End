@@ -1,0 +1,19 @@
+============== Buoi 8 ==============
+ * Routing (basic)
+    npm install react-router-dom --save
+ * HTTP & Axios
+    npm install axios --save
+    
+============== Buoi 9 ==============
+* HTTP & Axios (CHi tiet Phim)
+* HOC
+
+ npm install redux-thunk --save
+
+ ============== Buoi 10 ==============
+* Routing (Home template & User tempalte )
+* Dang nhap Admin
+
+ ============== Buoi 11 ==============
+ * Them nguoi dung (gioi thieu co che token)
+ * HOOKS

@@ -1,0 +1,4 @@
+==============Buoi 8 ==========\
++ Routing (basic)
+ npm install react-router-dom --save
++ HTTP & Axious

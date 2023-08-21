@@ -1,0 +1,137 @@
+html, body {
+    font-family: 'Roboto Condensed';
+}
+
+/* HEADER */
+.movieNav .navbar-nav{
+    border-bottom: 1px solid white;
+}
+
+.movieNav .navbar-nav .nav-item::after{
+    content: '';
+    /* bat buoc content */
+    height: 3px ;
+    width: 0%;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    display: block;
+    box-shadow: 0 0 20px 0 ;
+    transition: all, .5s
+}
+
+.movieNav .navbar-nav .nav-item:hover::after{
+    width:100%;
+}
+
+.movieNav .navbar-nav .nav-item.active::after{
+    width: 100%;
+    box-shadow: none;
+}
+/* CAROUSEL */
+
+.movieCarousel .carousel-inner .carousel-caption{
+    /* canh giua noi dung chu~ */
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.movieCarousel .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    opacity: 1;
+    background-clip: border-box; 
+
+}
+
+.movieCarousel .carousel-indicators li.active{
+    background-color: white;   
+    
+}
+
+.movieCarousel .carousel-indicators { 
+    justify-content: flex-start;
+    left: 50%;
+    transform: translate(-50%);
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* NEWIN */
+.newin__content img{
+    width: 100%;
+}
+
+.newin__item{
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.newin__overlay{
+    position: absolute;
+    top:0;
+    left: calc(-165px - 250%);
+    /* diem ket thuc left -165px ,width250px*/
+    width: 250%;
+    height: 100%;
+    background: linear-gradient( to bottom, #fbbd61, #ec7532);
+    transform: skew(45deg);
+    transition: all 0.5s;
+    opacity: 90%;
+}
+
+
+.newin__item:hover .newin__overlay{
+    left: -165px;
+}
+.newin__detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    color: white;
+}
+
+.newin__detail--circle{
+    border: 2px solid white;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.newin__item:hover .newin__detail{
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.showtime__tab {
+    border-bottom: 1px solid grey;
+}
+.showtime__tab  .nav-item::after{
+    position: absolute;
+    top:0;
+    left: calc(-165px - 250%);
+    /* diem ket thuc left -165px ,width250px*/
+    width: 250%;
+    height: 100%;
+    background: linear-gradient( to bottom, #fbbd61, #ec7532);
+    transform: skew(45deg);
+    transition: all 0.5s;
+    opacity: 90%;
+}
+.showtime__tab .nav-item:hover::after{
+    width: 100%;
+}
+.showtime__tab  .nav-item.active::after{
+    width: 100%;
+    box-shadow: none;
+}

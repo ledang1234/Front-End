@@ -1,0 +1,108 @@
+/* GLOBAL */
+html,body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* HEADER */
+
+.movieNavbar .navbar-nav{
+    border-bottom: 1px solid rgba(255,255,255,.2) ;
+}
+.movieNavbar .navbar-nav .nav-item::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    /* #fbbd61,#ec7532 */
+    background:linear-gradient(to right,#fbbd61,#ec7532);
+    display: block;
+    box-shadow: 0 0 20px 0 #fbbd61;
+    transition: all .5s;
+}
+
+.movieNavbar .navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+
+.movieNavbar .navbar-nav .nav-item.active::after{
+    width: 100%;
+    box-shadow:none;
+}
+
+/* CAROUSEL */
+
+#movieCarousel .carousel-inner .carousel-caption{
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    text-align: left;
+}
+
+#movieCarousel .carousel-indicators li{
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    opacity: 1;
+    background-clip: border-box;
+}
+
+#movieCarousel .carousel-indicators li.active{
+    background-color: white;
+}
+
+#movieCarousel .carousel-indicators{
+    justify-content: flex-start;
+
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+/* NEWS */
+.newIn__content img{
+  width: 100%;
+}
+
+.newIn__item{
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.newIn__overlay{
+  position: absolute;
+  top: 0;
+  left: calc(-165px - 250%);
+  /* Điểm kết thúc: left: -165px, widtg: 250% */
+  width: 250%;
+  height: 100%;
+  background: linear-gradient(to bottom,rgba(251,189,97),#ec7532);
+  transform: skew(45deg);
+}
+
+.newIn__item:hover .newIn__overlay{
+  left: -165px;
+}
+.newIn__detail{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* width: 100%;
+  height: 100%; */
+  color: white;
+}
+/* .newIn__detail--more{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+} */

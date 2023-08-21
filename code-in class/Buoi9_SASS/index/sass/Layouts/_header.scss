@@ -1,0 +1,43 @@
+.header{
+  &__logo{
+    display: flex;
+    align-items: center;
+    .navbar-brand{
+      flex-grow: 1;
+      img{
+        width: 110px;
+      }
+    }
+  }
+  &__categories{
+    flex-grow: 1;
+  }
+  &__input-search{
+    flex-grow: 5;
+    .input-group{
+      .form-control{
+        background-color: $color-background-input;
+        border-color: $color-background-input;
+        border-right: none;
+        &:focus{
+          box-shadow: none;
+          background-color: white;
+          & + .input-group-prepend{
+            .input-group-text{
+              background-color: white;
+              border-color: $color-background-input;
+            }
+          }
+        }
+      }
+
+      .input-group-prepend{
+        .input-group-text{
+          background-color: $color-background-input;
+          border-color: transparent;
+          border-left: none;
+        }
+      }
+    }
+  }
+}

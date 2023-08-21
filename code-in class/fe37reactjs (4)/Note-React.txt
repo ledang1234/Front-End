@@ -1,0 +1,30 @@
+npm install create-react-app -g (cài lần đầu duy nhất)
+create-react-app fe37reacrjs (câu lệnh tạo project)
+
+npm install: cài lại node_modules
+npm start: chạy project 
+
+=== Buoi 1 ====
+* Component
+    - Stateful Component: Class 
+    - Stateless Component: function
+
+============== Buoi 2 ==============
+* Rendering Elements: {}
+* Handling Events: onClick
+* State
+* List keys
+
+============== Buoi 3 ==============
+* Props
+    + class: sử dụng từ khóa this.props
+    + function: có tham số props
+* Lifting State Up
+* Bài tập giỏ hàng
+
+============== Buoi 4 ==============
+* Bài tập giỏ hàng (tt)
+* Bài tập Usermanagement
+
+npm install redux  --save  
+npm install  react-redux --save
